@@ -1,0 +1,9 @@
+@"
+*.class
+.idea/
+.vscode/
+*.iml
+build/
+out/
+target/
+"@ | Set-Content .gitignore
