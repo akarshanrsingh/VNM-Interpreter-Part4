@@ -51,6 +51,7 @@ The evaluator handles three fundamental literal types:
 The interpreter supports integer addition, subtraction, multiplication, and division. Arithmetic expressions follow Java-style operator precedence and associativity.
 
 Example: -3 + 5 - 10 - 2;
+
 Expected Result: -10
 
 ### 3. Boolean Comparisons
@@ -58,6 +59,7 @@ Expected Result: -10
 The evaluator processes Boolean literals and comparison operations involving numeric values. These expressions produce Boolean results that can be used in conditional statements.
 
 Example: 3 <= 6
+
 Expected Result: true
 
 ### 4. Conditional Statements
@@ -65,6 +67,7 @@ Expected Result: true
 The interpreter supports conditional execution using `if`, `elif`, and `else` statements. Conditions are evaluated sequentially, and only the first satisfied branch is executed. If none of the preceding conditions evaluates to true, the `else` branch is executed when present.
 
 Example: 
+
 if 2 > 5 then
     println "Hello";
 elif #1 then
@@ -126,17 +129,18 @@ The project requires:
 ### 1. Compile the Project
 
 Navigate to the project root directory and execute: make
+
 To force recompilation when necessary: make -B
 
 ### 2. Run the Interpreter
 
 Execute the provided script: ./run
+
 The interpreter can then process supported VNM statements entered through the command-line interface.
 
 ### 3. Run Automated Tests
 
-Execute the predefined test suite:
-./runtests
+Execute the predefined test suite:./runtests
 
 The testing script processes predefined VNM inputs and compares the generated results against their corresponding expected outputs.
 
